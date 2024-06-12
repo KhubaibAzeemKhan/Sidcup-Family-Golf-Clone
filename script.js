@@ -111,8 +111,36 @@ gsap.from("#page4 h1",{
 })
 
 
+let dot1 = document.querySelector("#pic-1")
 let dot2 = document.querySelector("#pic-2")
+let dot3 = document.querySelector("#pic-3")
 // dot2.style.backgroundColor = "green"
+let count = 0;
 dot2.addEventListener("click",function(){
-    console.log("Hi")
+    if(count = 0,count = 2){
+        document.querySelector("#pics img").src = "https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/cafe-menu-e1702553754869-734x1024.jpg?strip=all&lossy=1&sharp=1&ssl=1"
+        count = 1;
+        dot1.style.backgroundColor = "#fff"
+        dot2.style.backgroundColor = "#95c11e"
+        dot3.style.backgroundColor = "#fff"
+    }
 })
+dot1.addEventListener("click",function(){
+    if(count = 1,count = 2){
+        document.querySelector("#pics img").src = "https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/hero-5-1002x1024.jpg?strip=all&lossy=1&sharp=1&ssl=1"
+        count = 0;
+        dot2.style.backgroundColor = "#fff"
+        dot3.style.backgroundColor = "#fff"
+        dot1.style.backgroundColor = "#95c11e"
+    }
+})
+dot3.addEventListener("click",function(){
+    if(count = 0,count = 1){
+        document.querySelector("#pics img").src = "https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/cafe-about-1-682x1024.jpg?strip=all&lossy=1&sharp=1&ssl=1"
+        count = 2;
+        dot2.style.backgroundColor = "#fff"
+        dot1.style.backgroundColor = "#fff"
+        dot3.style.backgroundColor = "#95c11e"
+    }
+})
+

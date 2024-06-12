@@ -351,6 +351,8 @@ video {
     width: 500px;
     margin-left: 30px;
     border-radius: 20px;
+    transition: all ease 0.5s;
+    object-fit: cover;
 }
 #info-div{
     width: 673px;
@@ -382,6 +384,7 @@ video {
     width: 12px;
     border-radius: 50%;
     cursor: pointer;
+    z-index: 99;
 }
 #pic-1{
     background-color: #95c11e;
@@ -406,10 +409,11 @@ video {
     top: 25rem;
     transition: all ease-in 0.5s;
     cursor: pointer;
+    z-index: 99;
 }
 #btn:hover{
     background-color: #95c11e;
-    scale: 0.9;
+    scale: 0.95;
 }
 
 #page3 {
